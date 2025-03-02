@@ -1,0 +1,98 @@
+body {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white; /* Gjør teksten lys så den vises godt */
+  font-family: Arial, sans-serif; /* Velger en ren font */
+  height: 100vh; /* Sørger for at hele skjermen dekkes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clock {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: auto;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+#date {
+  font-size: 30px;
+  margin-top: 10px;
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+#toggleFormat {
+  background: white;
+  color: #1e3c72;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+#toggleFormat:hover {
+  background: #1e3c72;
+  color: white;
+  transform: scale(1.1); /* Knappen blir litt større */
+}
+
+#description {
+  font-size: 20px;
+  color: #ffcc70; /* Lys oransje/gullfarge for kontrast */
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#dateDescription {
+  font-size: 20px;
+  color: #ffcc70; /* Lys oransje/gullfarge for kontrast */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#descriptionFormat {
+  color: #ffcc70; /* Lys oransje/gullfarge for kontrast */
+  padding: 0;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#arrows {
+  color: #ffcc70; /* Lys oransje/gullfarge for kontrast */
+  margin: 10px 0;
+}
+
+#link-text {
+  margin-top: 15px; /* Litt mellomrom mellom knappen og lenken */
+}
+
+#infoLink {
+  font-size: 16px;
+  color: whitesmoke; /* Hvit lenkefarge */
+  text-decoration: none;
+}
+
+#infoLink:hover {
+  text-decoration: underline; /* Legger til understrek når man holder over */
+}
+
+#clock,
+#date {
+  transition: all 0.3s ease-in-out;
+}
+
+#clock-container {
+  background: rgba(255, 255, 255, 0.05); /* Gjennomsiktig hvit bakgrunn */
+  padding: 20px;
+  border-radius: 15px; /* Gjør rammen avrundet */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Halvtransparent kant */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Gir en svak glød */
+  text-align: center;
+  backdrop-filter: blur(10px); /* Glass-effekt */
+}
