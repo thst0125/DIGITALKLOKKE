@@ -1,5 +1,18 @@
+@keyframes pulseBackground {
+  0% {
+    background-color: #1e3c72;
+  }
+  50% {
+    background-color: #2a5298;
+  }
+  100% {
+    background-color: #1e3c72;
+  }
+}
+
 body {
-  background: linear-gradient(to right, #1e3c72, #2a5298);
+  animation: pulseBackground 20s infinite alternate ease-in-out;
+  transition: background 1s ease-in-out;
   color: white; /* Gjør teksten lys så den vises godt */
   font-family: Arial, sans-serif; /* Velger en ren font */
   height: 100vh; /* Sørger for at hele skjermen dekkes */
